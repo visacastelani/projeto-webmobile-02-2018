@@ -9,7 +9,8 @@ html,body{
 }
 /* SESSÃO DO HEADER*/
 /* SESSÃO DO SECTION*/
-.section{
+.section-main{
+	display: none;
 	position: relative;
 	display: flex;
 	flex-flow: column;
@@ -23,18 +24,14 @@ article{
 	align-items: center;
 	justify-content: center;
 }
-.article1 , .article2 , .article3{
-	height:600px;width:600px;
+.main{
+	height:100%;width:700px;
 	background: #DEDEDE;
 	border-radius:10px;
 	margin: 10px;
 }
-.article2 , .article3{
+.article{
 	display: none;
-}
-img{
-	width: 400px;
-	border-radius: 10px;
 }
 /* SESSÃO DO SECTION*/
 /* SESSÃO DO FOOTER*/
@@ -52,3 +49,31 @@ img{
 	padding:10px 10px 10px 10px;
 }
 /* SESSÃO DO FOOTER*/
+
+
+/* IMAGES */
+.img{
+	width:500px;height: 300px;
+}
+#menu-entrevista{
+	width:300px;height: 300px;
+	border-radius: 10px;
+}
+
+/* IMAGES */
+
+/* FONTES */
+h1{
+	font-family: sofia;
+}
+hr {
+    border-color: black;
+    background-color: black;
+    width: 600px;
+}
+p{
+	font-family: 'Finger Paint';
+	font-size: 80%;
+}
+
+/* FONTES */

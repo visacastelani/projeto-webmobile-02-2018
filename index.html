@@ -4,26 +4,99 @@
 		<title>Projeto WebMobile 02/2018</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			
 		</header>
-		<section class="section">
-			<article class="article1">
-				<img src="images/entrevista.jpg">
-				<input type='radio' name="pergunta1">Teste
-				<input type='radio' name="pergunta1">Teste
-				<input type='radio' name="pergunta1">Teste
-				<input type='radio' name="pergunta1">Teste
-				<input type="submit" value="Responder">
+		<section class="section-main">
+			<article class="main article menu">
+				<img src="images/menu-intrevista.jpg" alt="Visão do entrevistador" id="menu-entrevista">
+				<h1>Seja bem-vindo ao 'nome do quiz' !</h1>
+				<p class="p">Faremos uma sequência de dez perguntas.</p>
+				<p>Responda todas elas e veremos se , ao final, você será contratado!</p>
+				<h2>Está pronto para enviar o seu curriculo?</h2>
+				<button type="button" value="start">Enviar!</button>
 			</article>
-			<article class="article2">
-				<p>Artigo2</p>
+			<article class="main article 1">
+				<h1>O início:</h1>
+				<img src="images/imagem1.jpg" alt="Despertando" class="img">
+				<p>Sua entrevista será no dia seguinte, às 8h e você está se preparando para dormir.</p>
+				<p>Você ainda não conhece o trajeto, que deve demorar cerca de 1h30. Então decide acordar as:</p>
+			<form>
+				<input type='time' name="pergunta1">
+				<input type="submit" value="Enviar">
+			</form>
+
 			</article>
-			<article class="article3">
+			<article class="main 2">
+				<h1>No local:</h1>
+				<img src="images/imagem2.jpg" alt="Edifício" class="img">
+				<form>
+					<p>Okey, você chegou lá! O que faremos agora?</p><hr>
+					<input type="radio" name="op2"><p>Se apresentar na recepção</p>
+					<input type="radio" name="op2"><p>Jogar no celular</p>
+					<input type="radio" name="op2"><p>Ir tomar café</p>
+					<input type="radio" name="op2"><p>Voltar para casa</p>
+					<button type="button" value="Enviar" name="btn-2">
+				</form>
+			</article>
+			<article class="main article 3">
+				<h1>A Entrevista:</h1>
+				<img src="images/imagem3.png" class="img">
+				<p>Legal, agora está ficando sério. Você foi chamado para entrar na sala</p>
+				<p>Como deve se apresentar?</p><hr>
+				<input type="radio" name="op3"><p>Cóe, suave?</p>
+				<input type="radio" name="op3"><p>Eai, beleza?</p>
+				<input type="radio" name="op3"><p>Olá, bom dia!</p>
+				<input type="radio" name="op3"><p>Salve viado.</p>
+			</article>			
+			<article class="main article 4">
+				<h1>Apresentação:</h1>
+				<img src="images/imagem4.jpg" alt="Conversa" class="img">
+				<p>Tudo indo bem até agora! Seu (possível)futuro chefe quer te conhecer melhor. Ele pergunta:</p><hr>
+			</article>
+			<article class="main article 5">
+				<h1>Apresentação:</h1>
+				<img src="images/imagem5.jpg" alt="Conversa" class="img">
+				<p>Ele pergunta se você já trabalhou antes:</p><hr>
+				<input type="radio" name="op5"><p>É meu primeiro trampo!</p>
+				<input type="radio" name="op5"><p>Sim,já possuo experiência profissional.</p>
+				<input type="radio" name="op5"><p>Não, ainda não tive esta oportunidade.</p>
+				<input type="radio" name="op5"><p>Já trampei la na quebrada.</p>
+			</article>
+			<article class="main article 6">
+				<h1>Apresentação:</h1>
+				<img src="images/imagem6.png" alt="Conversa" class="img">
+				<p>Ele quer saber como está seu inglês e faz uma pergunta:</p>
+				<p>- "Do you feel confortable in speaking english?"</p><hr>
+				<input type="radio" name="op6"><p>EOQ?</p>
+				<input type="radio" name="op6"><p>The book in on the table?</p>
+				<input type="radio" name="op6"><p>Yes, I do fell confortable with english conversations.</p>
+				<input type="radio" name="op6"><p>Yes, me very good english.</p>
+			</article>
+			<article class="main article 7">
+				<h1>Apresentação:</h1>
+				<img src="images/imagem7.jpg" alt="Conversa" class="img">
+				<p>Agora, ele pergunta seus conhecimentos de informática.</p><hr>
+				<input type="radio" name="op7"><p>Eu administro uma página de memes no facebook.</p>
+				<input type="radio" name="op7"><p>Eu conheço as ferramentas do pacote office.</p>
+				<input type="radio" name="op7"><p>Tenho experiência com algumas linguagens de programação.</p>
+				<input type="radio" name="op7"><p>Eu sei usar a internet.</p>
+			</article>
+			<article class="main article article 8">
 				<p>Artigo3</p>
 			</article>
+			<article class="main article article 9">
+				<p>Artigo3</p>
+			</article>
+			<article class="main article article 10">
+				<p>Artigo3</p>
+			</article>
+			
 			
 		</section>
 		<footer class="footer">
