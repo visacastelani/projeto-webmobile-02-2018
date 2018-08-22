@@ -1,3 +1,5 @@
+/* Recebe os valores do artigo e do botão do artigo */
+
 /*       FASE 1              */
 var start = document.getElementById('start');
 var step = document.getElementById('step');
@@ -11,6 +13,7 @@ var next1 = document.getElementById('next1');
 /*       FASE 3              */
 var step2 = document.getElementById('step2');
 var next2 = document.getElementById('next2');
+var op2 = document.getElementById('op2');
 /*       FASE 3              */
 
 /*       FASE 4              */
@@ -55,6 +58,8 @@ var next10 = document.getElementById('next10');
 /*       FASE  10            */
 
 
+/*	Alterna entre as questões	*/
+
 start.onclick = function(){
 	step.style.display = "none";
 	step1.style.display = "block";
@@ -66,8 +71,15 @@ next1.onclick = function(){
 }
 
 next2.onclick = function(){
+	if(document.form.op2[0].checked==false && 
+		document.form.op2[1].checked==false &&
+		document.form.op2[2].checked==false &&
+		document.form.op2[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step2.style.display = "none";
 	step3.style.display = "block";
+	}
 }
 
 next3.onclick = function(){
@@ -104,4 +116,5 @@ next9.onclick = function(){
 	step9.style.display = "none";
 	step10.style.display = "block";
 }
+/*	Alterna entre as questões	*/
 
