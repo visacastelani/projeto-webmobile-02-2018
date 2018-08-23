@@ -19,27 +19,37 @@ var op2 = document.getElementById('op2');
 /*       FASE 4              */
 var step3 = document.getElementById('step3');
 var next3 = document.getElementById('next3');
+var op3 = document.getElementById('op3');
+
 /*       FASE 4              */
 
 
 /*       FASE 5              */
 var step4 = document.getElementById('step4');
 var next4 = document.getElementById('next4');
+var op4 = document.getElementById('op4');
+
 /*       FASE 5              */
 
 /*       FASE  6             */
 var step5 = document.getElementById('step5');
-var next5 = document.getElementById('step5');
+var next5 = document.getElementById('next5');
+var op5 = document.getElementById('op5');
+
 /*       FASE  6             */
 
 /*       FASE  7             */
 var step6 = document.getElementById('step6');
 var next6 = document.getElementById('next6');
+var op6 = document.getElementById('op6');
+
 /*       FASE  7             */
 
 /*       FASE  8             */
 var step7 = document.getElementById('step7');
 var next7 = document.getElementById('next7');
+var op7 = document.getElementById('op7');
+
 /*       FASE  8            */
 
 /*       FASE  8             */
@@ -83,30 +93,60 @@ next2.onclick = function(){
 }
 
 next3.onclick = function(){
+	if(document.form.op3[0].checked==false && 
+		document.form.op3[1].checked==false &&
+		document.form.op3[2].checked==false &&
+		document.form.op3[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step3.style.display = "none";
 	step4.style.display = "block";
+	}
 }
-
 next4.onclick = function(){
+	if(document.form.op4[0].checked==false && 
+		document.form.op4[1].checked==false &&
+		document.form.op4[2].checked==false &&
+		document.form.op4[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step4.style.display = "none";
 	step5.style.display = "block";
+	}
 }
-
 next5.onclick = function(){
+	if(document.form.op5[0].checked==false && 
+		document.form.op5[1].checked==false &&
+		document.form.op5[2].checked==false &&
+		document.form.op5[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step5.style.display = "none";
 	step6.style.display = "block";
+	}
 }
-
 next6.onclick = function(){
+	if(document.form.op6[0].checked==false && 
+		document.form.op6[1].checked==false &&
+		document.form.op6[2].checked==false &&
+		document.form.op6[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step6.style.display = "none";
 	step7.style.display = "block";
+	}
 }
-
 next7.onclick = function(){
+	if(document.form.op7[0].checked==false && 
+		document.form.op7[1].checked==false &&
+		document.form.op7[2].checked==false &&
+		document.form.op7[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
 	step7.style.display = "none";
 	step8.style.display = "block";
+	}
 }
-
 next8.onclick = function(){
 	step8.style.display = "none";
 	step9.style.display = "block";
@@ -118,3 +158,6 @@ next9.onclick = function(){
 }
 /*	Alterna entre as questões	*/
 
+/*
+
+*/
