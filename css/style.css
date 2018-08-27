@@ -22,13 +22,13 @@ article{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	justify-content: center;
 }
 .main{
 	height:100%;width:700px;
 	background: #DEDEDE;
 	border-radius:10px;
 	margin: 10px;
+	text-align: center;
 }
 .article{
 	display: none;
@@ -54,6 +54,7 @@ article{
 /* IMAGES */
 .img{
 	width:500px;height: 300px;
+	padding:20px 100px;
 }
 #menu-entrevista{
 	width:300px;height: 300px;
@@ -65,15 +66,32 @@ article{
 /* FONTES */
 h1{
 	font-family: sofia;
+	text-align: center;
 }
 hr {
     border-color: black;
     background-color: black;
     width: 600px;
 }
-p{
+input{
 	font-family: 'Finger Paint';
 	font-size: 80%;
 }
 
 /* FONTES */
+
+/*			FORMULARIO			*/
+
+/*			FORMULARIO			*/
+
+
+/* ETC */
+.voltar img{
+	width: 60px;
+	float: left;
+	position: absolute;
+	padding:10px ;
+	top:10px;
+	cursor: pointer;
+}
+/* ETC */
