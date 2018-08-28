@@ -90,8 +90,8 @@ input{
 	width: 60px;
 	float: left;
 	position: absolute;
-	padding:10px ;
-	top:10px;
+	padding:0.1%;
+	top:5%;
 	cursor: pointer;
 }
 /* ETC */
