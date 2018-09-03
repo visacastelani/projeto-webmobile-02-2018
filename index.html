@@ -29,7 +29,7 @@
 					<p>Sua entrevista será no dia seguinte, às 8h e você está se preparando para dormir.</p>
 					<p>Você ainda não conhece o trajeto, que deve demorar cerca de 1h30. Então decide acordar as:</p>
 					
-						<input type='time' name="pergunta1">
+						<input type='time' name="op1">
 						<button type="button" id="next1">Avançar</button>
 					
 
@@ -53,10 +53,10 @@
 					<p>Legal, agora está ficando sério. Você foi chamado para entrar na sala.</p>
 					<p>Como deve se apresentar?</p><hr>
 					
-						<input type="radio" name="op3" value="1"><p>Cóe, suave?</p>
-						<input type="radio" name="op3" value="2"><p>Eai, beleza?</p>
-						<input type="radio" name="op3" value="3"><p>Olá, bom dia!</p>
-						<input type="radio" name="op3" value="4"><p>Salve viado.</p>
+						<input type="radio" name="op3" value="-1"><p>Cóe, suave?</p>
+						<input type="radio" name="op3" value="-1"><p>Eai, beleza?</p>
+						<input type="radio" name="op3" value="1"><p>Olá, bom dia!</p>
+						<input type="radio" name="op3" value="lose"><p>Salve viado.</p>
 						<button type="button" id="next3">Avançar</button>
 					
 				</article>			
@@ -66,10 +66,10 @@
 					<img src="images/imagem4.jpg" alt="Conversa" class="img">
                     <p>Tudo indo bem até agora! Seu (possível)futuro chefe quer te conhecer melhor :</p><hr>
                     <p>Como foi o caminho até aqui ?</p><hr>
-						<input type="radio" name="op4"><p>Foi de boa mané!</p>
-						<input type="radio" name="op4"><p>Tirando o trânsito, tudo bem!</p>
-						<input type="radio" name="op4"><p>Foi tudo bem, clima agradável!</p>
-						<input type="radio" name="op4"><p>Da hora, peguei vários Pokémon!</p>
+						<input type="radio" name="op4" value="-1"><p>Foi de boa mané!</p>
+						<input type="radio" name="op4" value="1"><p>Tirando o trânsito, tudo bem!</p>
+						<input type="radio" name="op4" value="1"><p>Foi tudo bem, clima agradável!</p>
+						<input type="radio" name="op4" value="-1"><p>Da hora, peguei vários Pokémon!</p>
 						<button type="button" id="next4">Avançar</button>
 					
 				</article>
@@ -78,10 +78,10 @@
 					<span class="voltar" id="voltar5"><img src="images/back.png"></span>
 					<img src="images/imagem5.jpg" alt="Conversa" class="img">
 					<p>Você já trabalhou antes ?</p><hr>
-						<input type="radio" name="op5"><p>É meu primeiro trampo!</p>
-						<input type="radio" name="op5"><p>Sim,já possuo experiência profissional.</p>
-						<input type="radio" name="op5"><p>Não, ainda não tive esta oportunidade.</p>
-						<input type="radio" name="op5"><p>Já trampei la na quebrada.</p>
+						<input type="radio" name="op5" value="-1"><p>É meu primeiro trampo!</p>
+						<input type="radio" name="op5" value="2"><p>Sim,já possuo experiência profissional.</p>
+						<input type="radio" name="op5" value="1"><p>Não, ainda não tive esta oportunidade.</p>
+						<input type="radio" name="op5" value="-1"><p>Já trampei la na quebrada.</p>
 						<button type="button" id="next5">Avançar</button>
 					
 				</article>
@@ -91,10 +91,10 @@
 					<img src="images/imagem6.png" alt="Conversa" class="img">
 					<p>Ele quer saber como está seu inglês :</p>
 					<p>Do you feel comfortable in speaking english ?</p><hr>
-						<input type="radio" name="op6"><p>EOQ?</p>
-						<input type="radio" name="op6"><p>The book in on the table?</p>
-						<input type="radio" name="op6"><p>Yes, I do fell comfortable with english conversations.</p>
-						<input type="radio" name="op6"><p>Yes, me very good english.</p>
+						<input type="radio" name="op6" value="-1"><p>EOQ?</p>
+						<input type="radio" name="op6" value="-1"><p>The book in on the table?</p>
+						<input type="radio" name="op6" value="2"><p>Yes, I do fell comfortable with english conversations.</p>
+						<input type="radio" name="op6" value="-1"><p>Yes, me very good english.</p>
 						<button type="button" id="next6">Avançar</button>
 					
 				</article>
@@ -104,10 +104,10 @@
 					<img src="images/imagem7.png" alt="Conversa" class="img">
 					<p>Interessante. O que você faz no seu tempo livre ?</p><hr>
 					
-						<input type="radio" name="op7"><p>Eu crio MEMES!</p>
-						<input type="radio" name="op7"><p>Eu gosto de jogar.</p>
-						<input type="radio" name="op7"><p>Assisto filmes.</p>
-						<input type="radio" name="op7"><p>Reuno meus amigos para uma baguncinha na minha casa.</p>
+						<input type="radio" name="op7" value="-1"><p>Eu crio MEMES!</p>
+						<input type="radio" name="op7" value="1"><p>Eu gosto de jogar.</p>
+						<input type="radio" name="op7" value="1"><p>Assisto filmes.</p>
+						<input type="radio" name="op7" value="-1"><p>Reuno meus amigos para uma baguncinha na minha casa.</p>
 						<button type="button" id="next7">Avançar</button>
 					
 				</article>
@@ -118,10 +118,10 @@
 					<p>A entrevista já está próxima do fim! Mantenha a calma.</p><hr>
                     <p>Mas me diga agora, o que você espera dessa empresa ?</p><hr>
 					
-						<input type="radio" name="op8"><p>Vale Refeição conta?</p>
-						<input type="radio" name="op8"><p>Espero ter a oportunidade de crescer na empresa!</p>
-						<input type="radio" name="op8"><p>Quero comprar coisas inúteis, to aqui só pelo dinheiro.</p>
-						<input type="radio" name="op8"><p>EU NUM CEI MEO!</p>
+						<input type="radio" name="op8" value="-1"><p>Vale Refeição conta?</p>
+						<input type="radio" name="op8" value="2"><p>Espero ter a oportunidade de crescer na empresa!</p>
+						<input type="radio" name="op8" value="-2"><p>Quero comprar coisas inúteis, to aqui só pelo dinheiro.</p>
+						<input type="radio" name="op8" value="-2"><p>EU NUM CEI MEO!</p>
 						<button type="button" id="next8">Avançar</button>
 					
 				</article>
@@ -131,10 +131,10 @@
 					<img src="images/imagem9.png" alt="Conversa" class="img">
 					<p>Agora me diga, qual ramo de TI pretende seguir ?</p><hr>
 					
-						<input type="radio" name="op9"><p>Suporte.</p>
-						<input type="radio" name="op9"><p>Desenvolvedor de SOFTWARE.</p>
-						<input type="radio" name="op9"><p>Nunca parei para pensar nisso.</p>
-						<input type="radio" name="op9"><p>Quero ser YOUTUBER!.</p>
+						<input type="radio" name="op9" value="1"><p>Suporte.</p>
+						<input type="radio" name="op9" value="1"><p>Desenvolvedor de SOFTWARE.</p>
+						<input type="radio" name="op9" value="0"><p>Nunca parei para pensar nisso.</p>
+						<input type="radio" name="op9" value="-1"><p>Quero ser YOUTUBER!.</p>
 						<button type="button" id="next9">Avançar</button>
 					
 				</article>
@@ -144,11 +144,16 @@
 					<img src="images/imagem10.png" alt="Conversa" class="img">
 					<p>Essa é minha última pergunta. Por que eu devo te contratar ?</p><hr>
 					
-						<input type="radio" name="op10"><p>PQ EU TO DESEMPREGADO.</p>
-						<input type="radio" name="op10"><p>Porque eu tenho vontade de iniciar na área.</p>
-						<input type="radio" name="op10"><p>Porque eu sou melhor que os outros!</p>
-						<input type="radio" name="op10"><p>Não deveria! Desculpa to nervoso! Só me contrata!</p>
-						<input type="submit" value="Obrigado pela entrevista!">
+						<input type="radio" name="op10" value="-2"><p>PQ EU TO DESEMPREGADO.</p>
+						<input type="radio" name="op10" value="2"><p>Porque eu tenho vontade de iniciar na área.</p>
+						<input type="radio" name="op10" value="-2"><p>Porque eu sou melhor que os outros!</p>
+						<input type="radio" name="op10" value="lose"><p>Não deveria! Desculpa to nervoso! Só me contrata!</p>
+						<button type="button" id="next10">Avançar</button>
+				</article>
+				<article class="main article 11" id="step11">
+					<h1>Final:</h1>
+					<p>O entrevistador agradece sua presença, e diz:...</p>
+					<button type="button" id="next11">Avançar</button>
 				</article>
 			</form>			
 		</section>

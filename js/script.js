@@ -9,6 +9,7 @@ var step = document.getElementById('step');
 var step1 = document.getElementById('step1');
 var next1 = document.getElementById('next1');
 var voltar1 = document.getElementById('voltar1');
+var ponto1 = form.op1.value;
 
 /*       FASE 2              */
 
@@ -17,6 +18,7 @@ var step2 = document.getElementById('step2');
 var next2 = document.getElementById('next2');
 var op2 = document.getElementById('op2');
 var voltar2 = document.getElementById('voltar2');
+
 /*       FASE 3              */
 
 /*       FASE 4              */
@@ -24,6 +26,7 @@ var step3 = document.getElementById('step3');
 var next3 = document.getElementById('next3');
 var op3 = document.getElementById('op3');
 var voltar3 = document.getElementById('voltar3');
+
 
 /*       FASE 4              */
 
@@ -34,6 +37,7 @@ var next4 = document.getElementById('next4');
 var op4 = document.getElementById('op4');
 var voltar4 = document.getElementById('voltar4');
 
+
 /*       FASE 5              */
 
 /*       FASE  6             */
@@ -41,6 +45,7 @@ var step5 = document.getElementById('step5');
 var next5 = document.getElementById('next5');
 var op5 = document.getElementById('op5');
 var voltar5 = document.getElementById('voltar5');
+
 
 /*       FASE  6             */
 
@@ -50,6 +55,7 @@ var next6 = document.getElementById('next6');
 var op6 = document.getElementById('op6');
 var voltar6 = document.getElementById('voltar6');
 
+
 /*       FASE  7             */
 
 /*       FASE  8             */
@@ -58,24 +64,28 @@ var next7 = document.getElementById('next7');
 var op7 = document.getElementById('op7');
 var voltar7 = document.getElementById('voltar7');
 
+
 /*       FASE  8            */
 
 /*       FASE  8             */
 var step8 = document.getElementById('step8');
 var next8 = document.getElementById('next8');
 var voltar8 = document.getElementById('voltar8');
+
 /*       FASE  8            */
 
 /*       FASE  9             */
 var step9 = document.getElementById('step9');
 var next9 = document.getElementById('next9');
 var voltar9 = document.getElementById('voltar9');
+
 /*       FASE  9            */
 
 /*       FASE  10             */
 var step10 = document.getElementById('step10');
 var next10 = document.getElementById('next10');
 var voltar10 = document.getElementById('voltar10');
+
 /*       FASE  10            */
 
 
@@ -106,6 +116,7 @@ next2.onclick = function(){
 		document.form.op2[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto2 = form.op2.value;
 	step2.style.display = "none";
 	step3.style.display = "block";
 	}
@@ -126,6 +137,7 @@ next3.onclick = function(){
 		document.form.op3[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto3 = form.op3.value;
 	step3.style.display = "none";
 	step4.style.display = "block";
 	}
@@ -148,6 +160,7 @@ next4.onclick = function(){
 		document.form.op4[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto4 = form.op4.value;
 	step4.style.display = "none";
 	step5.style.display = "block";
 	}
@@ -169,6 +182,7 @@ next5.onclick = function(){
 		document.form.op5[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto5 = form.op5.value;
 	step5.style.display = "none";
 	step6.style.display = "block";
 	}
@@ -192,6 +206,7 @@ next6.onclick = function(){
 		document.form.op6[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto6 = form.op6.value;
 	step6.style.display = "none";
 	step7.style.display = "block";
 	}
@@ -214,6 +229,7 @@ next7.onclick = function(){
 		document.form.op7[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
+	var ponto7 = form.op7.value;
 	step7.style.display = "none";
 	step8.style.display = "block";
 	}
@@ -230,9 +246,18 @@ voltar7.onclick = function(){
 
 
 next8.onclick = function(){
+	if(document.form.op8[0].checked==false && 
+		document.form.op8[1].checked==false &&
+		document.form.op8[2].checked==false &&
+		document.form.op8[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
+	var ponto8 = form.op8.value;	
 	step8.style.display = "none";
 	step9.style.display = "block";
+	}
 }
+
 
 voltar8.onclick = function(){
 	step7.style.display = "block";
@@ -247,20 +272,62 @@ voltar8.onclick = function(){
 
 
 next9.onclick = function(){
+	if(document.form.op9[0].checked==false && 
+		document.form.op9[1].checked==false &&
+		document.form.op9[2].checked==false &&
+		document.form.op9[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
+	var ponto9 = form.op9.value;
 	step9.style.display = "none";
 	step10.style.display = "block";
+	}
 }
 voltar9.onclick = function(){
 	step8.style.display = "block";
 	step9.style.display ="none";
 }
 
+
+next10.onclick = function(){
+	if(document.form.op10[0].checked==false && 
+		document.form.op10[1].checked==false &&
+		document.form.op10[2].checked==false &&
+		document.form.op10[3].checked==false){
+		alert("Escolha um opção!");
+	}else{
+		var ponto10 = form.op10.value;
+		step10.style.display = "none";
+	step11.style.display = "block";
+	}
+	/*
+	next11.onClick : Aqui serão feitas as verificações com base na pontuação do usuário
+	if(pontos>10){
+	next11.onClick = function(){
+		step11.style.display = none
+		contratado.style.display = none
+	}
+	}
+	*/
+}
+/*
+Nesse bloco sera feita a transição para a finalização da entrevista
 voltar10.onclick = function(){
 	step9.style.display = "block";
 	step10.style.display ="none";
 }
+*/
 /*	Alterna entre as questões	*/
 
-/*
 
+
+
+/*
+	SOMA TUDO:
 */
+function somaValores(){
+	alert("ta funcionando a função");
+	var somaPontos = ponto1 + ponto2 + ponto3 + ponto4 + ponto5 + ponto6 + ponto7 + ponto8 + ponto9 + ponto10;
+	alert("Você Somou: ",somaPontos);
+	return somaPontos;
+}
