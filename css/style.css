@@ -94,7 +94,30 @@ input{
 	top:5%;
 	cursor: pointer;
 }
+/* ETC */
+
+/*Páginas dos perdedores*/
 .lose{
 	display: none;
 }
-/* ETC */
+#lose1{
+	height:100%;width:700px;
+	background: #DEDEDE;
+	border-radius:10px;
+	margin: 10px;
+	text-align: center;
+}
+/*Páginas dos perdedores*/
+
+/*Responsivo*/
+@media screen and (max-width:768px){
+	body{
+		background-color: purple; /*Só pra ver se está responsivo*/
+}
+
+@media screen and (max-width:480px){
+	body{
+		background-color: pink; /*Só pra ver se está responsivo*/
+	}
+}
+/*Responsivo*/
