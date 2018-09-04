@@ -94,4 +94,7 @@ input{
 	top:5%;
 	cursor: pointer;
 }
+.lose{
+	display: none;
+}
 /* ETC */

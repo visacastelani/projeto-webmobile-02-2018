@@ -1,5 +1,5 @@
 /* Recebe os valores do artigo e do botão do artigo */
-
+var pontuacao = 0;
 /*       FASE 1              */
 var start = document.getElementById('start');
 var step = document.getElementById('step');
@@ -89,6 +89,15 @@ var voltar10 = document.getElementById('voltar10');
 /*       FASE  10            */
 
 
+
+/* quando o usuário perde durante o quiz*/
+var lose1 = document.getElementById('lose1');
+
+
+var restart = document.getElementById('restart');
+/* quando o usuário perde durante o quiz*/
+
+
 /*	Alterna entre as questões	*/
 
 start.onclick = function(){
@@ -115,10 +124,19 @@ next2.onclick = function(){
 		document.form.op2[2].checked==false &&
 		document.form.op2[3].checked==false){
 		alert("Escolha um opção!");
+	}else if(document.form.op2[3].checked==true){
+		step2.style.display = "none";
+		lose1.style.display = "block";
+		restart.onclick = function(){
+			location.reload();
+		}
 	}else{
-	var ponto2 = form.op2.value;
-	step2.style.display = "none";
-	step3.style.display = "block";
+		param2 = form.op2.value;
+		paramOp2 = parseInt(param2);
+		pontuacao += paramOp2;
+	        alert(pontuacao);
+		step2.style.display = "none";
+		step3.style.display = "block";
 	}
 }
 voltar2.onclick = function(){
@@ -136,10 +154,16 @@ next3.onclick = function(){
 		document.form.op3[2].checked==false &&
 		document.form.op3[3].checked==false){
 		alert("Escolha um opção!");
+	}else if(document.form.op3[3].checked==true){
+		alert("Você perdeu!");
+		location.reload();
 	}else{
-	var ponto3 = form.op3.value;
-	step3.style.display = "none";
-	step4.style.display = "block";
+		param3 = form.op3.value;
+		paramOp3 = parseInt(param3);
+		pontuacao += paramOp3;
+	        alert(pontuacao);
+		step3.style.display = "none";
+		step4.style.display = "block";
 	}
 }
 voltar3.onclick = function(){
@@ -160,9 +184,12 @@ next4.onclick = function(){
 		document.form.op4[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto4 = form.op4.value;
-	step4.style.display = "none";
-	step5.style.display = "block";
+		param4 = form.op4.value;
+		paramOp4 = parseInt(param4);
+		pontuacao += paramOp4;
+	        alert(pontuacao);
+		step4.style.display = "none";
+		step5.style.display = "block";
 	}
 }
 voltar4.onclick = function(){
@@ -182,9 +209,12 @@ next5.onclick = function(){
 		document.form.op5[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto5 = form.op5.value;
-	step5.style.display = "none";
-	step6.style.display = "block";
+		param5 = form.op5.value;
+		paramOp5 = parseInt(param5);
+		pontuacao += paramOp5;
+	        alert(pontuacao);
+		step5.style.display = "none";
+		step6.style.display = "block";
 	}
 }
 voltar5.onclick = function(){
@@ -206,9 +236,12 @@ next6.onclick = function(){
 		document.form.op6[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto6 = form.op6.value;
-	step6.style.display = "none";
-	step7.style.display = "block";
+		param6 = form.op6.value;
+		paramOp6 = parseInt(param6);
+		pontuacao += paramOp6;
+	        alert(pontuacao);
+		step6.style.display = "none";
+		step7.style.display = "block";
 	}
 }
 voltar6.onclick = function(){
@@ -229,9 +262,12 @@ next7.onclick = function(){
 		document.form.op7[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto7 = form.op7.value;
-	step7.style.display = "none";
-	step8.style.display = "block";
+		param7 = form.op7.value;
+		paramOp7 = parseInt(param7);
+		pontuacao += paramOp7;
+        alert(pontuacao);
+		step7.style.display = "none";
+		step8.style.display = "block";
 	}
 }
 voltar7.onclick = function(){
@@ -252,9 +288,12 @@ next8.onclick = function(){
 		document.form.op8[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto8 = form.op8.value;	
-	step8.style.display = "none";
-	step9.style.display = "block";
+		param8 = form.op8.value;
+		paramOp8 = parseInt(param8);
+		pontuacao += paramOp8;	
+        alert(pontuacao);
+		step8.style.display = "none";
+		step9.style.display = "block";
 	}
 }
 
@@ -278,9 +317,12 @@ next9.onclick = function(){
 		document.form.op9[3].checked==false){
 		alert("Escolha um opção!");
 	}else{
-	var ponto9 = form.op9.value;
-	step9.style.display = "none";
-	step10.style.display = "block";
+		param9 = form.op9.value;
+		paramOp9 = parseInt(param9);
+		pontuacao += paramOp9;
+        alert(pontuacao);
+		step9.style.display = "none";
+		step10.style.display = "block";
 	}
 }
 voltar9.onclick = function(){
@@ -295,10 +337,16 @@ next10.onclick = function(){
 		document.form.op10[2].checked==false &&
 		document.form.op10[3].checked==false){
 		alert("Escolha um opção!");
+	}else if(document.form.op10[3].checked==true){
+		alert("Voce perdeu!");
+		location.reload();
 	}else{
-		var ponto10 = form.op10.value;
+		param10 = form.op10.value;
+		paramOp10 = parseInt(param10);
+		pontuacao += paramOp10;
+        alert(pontuacao);
 		step10.style.display = "none";
-	step11.style.display = "block";
+		step11.style.display = "block";
 	}
 	/*
 	next11.onClick : Aqui serão feitas as verificações com base na pontuação do usuário
