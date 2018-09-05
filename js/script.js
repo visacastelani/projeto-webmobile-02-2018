@@ -133,8 +133,7 @@ next2.onclick = function(){
 	}else{
 		param2 = form.op2.value;
 		paramOp2 = parseInt(param2);
-		pontuacao += paramOp2;
-	        alert(pontuacao);
+        alert(paramOp2);
 		step2.style.display = "none";
 		step3.style.display = "block";
 	}
@@ -160,8 +159,7 @@ next3.onclick = function(){
 	}else{
 		param3 = form.op3.value;
 		paramOp3 = parseInt(param3);
-		pontuacao += paramOp3;
-	        alert(pontuacao);
+        alert(paramOp3);
 		step3.style.display = "none";
 		step4.style.display = "block";
 	}
@@ -186,8 +184,7 @@ next4.onclick = function(){
 	}else{
 		param4 = form.op4.value;
 		paramOp4 = parseInt(param4);
-		pontuacao += paramOp4;
-	        alert(pontuacao);
+        alert(paramOp4);
 		step4.style.display = "none";
 		step5.style.display = "block";
 	}
@@ -211,8 +208,7 @@ next5.onclick = function(){
 	}else{
 		param5 = form.op5.value;
 		paramOp5 = parseInt(param5);
-		pontuacao += paramOp5;
-	        alert(pontuacao);
+	        alert(paramOp5);
 		step5.style.display = "none";
 		step6.style.display = "block";
 	}
@@ -238,8 +234,7 @@ next6.onclick = function(){
 	}else{
 		param6 = form.op6.value;
 		paramOp6 = parseInt(param6);
-		pontuacao += paramOp6;
-	        alert(pontuacao);
+	        alert(paramOp6);
 		step6.style.display = "none";
 		step7.style.display = "block";
 	}
@@ -264,8 +259,7 @@ next7.onclick = function(){
 	}else{
 		param7 = form.op7.value;
 		paramOp7 = parseInt(param7);
-		pontuacao += paramOp7;
-        alert(pontuacao);
+        alert(paramOp7);
 		step7.style.display = "none";
 		step8.style.display = "block";
 	}
@@ -290,8 +284,7 @@ next8.onclick = function(){
 	}else{
 		param8 = form.op8.value;
 		paramOp8 = parseInt(param8);
-		pontuacao += paramOp8;	
-        alert(pontuacao);
+        alert(paramOp8);
 		step8.style.display = "none";
 		step9.style.display = "block";
 	}
@@ -319,8 +312,7 @@ next9.onclick = function(){
 	}else{
 		param9 = form.op9.value;
 		paramOp9 = parseInt(param9);
-		pontuacao += paramOp9;
-        alert(pontuacao);
+        alert(paramOp9);
 		step9.style.display = "none";
 		step10.style.display = "block";
 	}
@@ -343,21 +335,21 @@ next10.onclick = function(){
 	}else{
 		param10 = form.op10.value;
 		paramOp10 = parseInt(param10);
-		pontuacao += paramOp10;
-        alert(pontuacao);
+		alert(paramOp10);
 		step10.style.display = "none";
 		step11.style.display = "block";
 	}
+}
+next11.onclick = function(){
+	pontuacao = paramOp2+paramOp3+paramOp4+paramOp5+paramOp6+paramOp7+paramOp8+paramOp9+paramOp10;
+	alert(pontuacao);
 	/*
-	next11.onClick : Aqui serão feitas as verificações com base na pontuação do usuário
-	if(pontos>10){
-	next11.onClick = function(){
-		step11.style.display = none
-		contratado.style.display = none
-	}
-	}
+		COLOCAR AQUI OS FINAIS
 	*/
 }
+
+	
+
 /*
 Nesse bloco sera feita a transição para a finalização da entrevista
 voltar10.onclick = function(){
