@@ -141,7 +141,7 @@ button{
 .lose{
 	display: none;
 }
-#lose1{
+#lose1,#lose2{
 	height:100%;width:700px;
 	background: #DEDEDE;
 	border-radius:10px;

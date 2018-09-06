@@ -92,6 +92,7 @@ var voltar10 = document.getElementById('voltar10');
 
 /* quando o usuário perde durante o quiz*/
 var lose1 = document.getElementById('lose1');
+var lose2 = document.getElementById('lose2');
 
 
 var restart = document.getElementById('restart');
@@ -154,11 +155,14 @@ next3.onclick = function(){
 		document.form.op3[3].checked==false){
 		alert("Escolha um opção!");
 	}else if(document.form.op3[3].checked==true){
-		alert("Você perdeu!");
-		location.reload();
+		step3.style.display = "none";
+		lose2.style.display = "block";
+		restart.onclick = function(){
+			location.reload();
+		}
 	}else{
-		param3 = form.op3.value;
-		paramOp3 = parseInt(param3);
+		param2 = form.op3.value;
+		paramOp3 = parseInt(param2);
         alert(paramOp3);
 		step3.style.display = "none";
 		step4.style.display = "block";
