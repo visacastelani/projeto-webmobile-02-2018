@@ -99,10 +99,11 @@ article{
 /* IMAGES */
 
 /* FONTES */
-h1{
+h1,h2{
 	font-family: sofia;
 	text-align: center;
 }
+
 hr {
     border-color: black;
     background-color: black;
@@ -137,18 +138,18 @@ button{
 }
 /* ETC */
 
-/*Páginas dos perdedores*/
+/*Páginas dos finais*/
 .lose{
 	display: none;
 }
-#lose1,#lose2{
+#lose1,#lose2,#lose3,#lose4,#lose5,#lose6,#lose7,#lose8,#lose9,#final1,#final2,#final3{
 	height:100%;width:700px;
 	background: #DEDEDE;
 	border-radius:10px;
 	margin: 10px;
 	text-align: center;
 }
-/*Páginas dos perdedores*/
+/*Páginas dos finais*/
 
 /*Responsivo*/
 @media screen and (max-width:768px){

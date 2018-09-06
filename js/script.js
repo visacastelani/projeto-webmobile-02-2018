@@ -185,9 +185,15 @@ next4.onclick = function(){
 		document.form.op4[2].checked==false &&
 		document.form.op4[3].checked==false){
 		alert("Escolha um opção!");
+	}else if(document.form.op4[3].checked==true){
+		step3.style.display = "none";
+		lose3.style.display = "block";
+		restart.onclick = function(){
+			location.reload();
+		}
 	}else{
-		param4 = form.op4.value;
-		paramOp4 = parseInt(param4);
+		param2 = form.op4.value;
+		paramOp4 = parseInt(param2);
         alert(paramOp4);
 		step4.style.display = "none";
 		step5.style.display = "block";
