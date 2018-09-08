@@ -166,6 +166,7 @@ next2.onclick = function(){
 	}else{
 		param2 = form.op2.value;
 		paramOp2 = parseInt(param2);
+        alert(paramOp2);
 		step2.style.display = "none";
 		step3.style.display = "block";
 	}
@@ -194,6 +195,7 @@ next3.onclick = function(){
 	}else{
 		param2 = form.op3.value;
 		paramOp3 = parseInt(param2);
+        alert(paramOp3);
 		step3.style.display = "none";
 		step4.style.display = "block";
 	}
@@ -219,11 +221,14 @@ next4.onclick = function(){
 		step4.style.display = "none";
 		lose3.style.display = "block";
 		restart2.onclick = function(){
+		step3.style.display = "none";
+		lose3.style.display = "block";
 			location.reload();
 		}
 	}else{
 		param2 = form.op4.value;
 		paramOp4 = parseInt(param2);
+        alert(paramOp4);
 		step4.style.display = "none";
 		step5.style.display = "block";
 	}
@@ -253,6 +258,9 @@ next5.onclick = function(){
 	}else{
 		param2 = form.op5.value;
 		paramOp5 = parseInt(param2);
+		param5 = form.op5.value;
+		paramOp5 = parseInt(param5);
+	        alert(paramOp5);
 		step5.style.display = "none";
 		step6.style.display = "block";
 	}
@@ -284,6 +292,9 @@ next6.onclick = function(){
 	}else{
 		param2 = form.op6.value;
 		paramOp6 = parseInt(param2);
+		param6 = form.op6.value;
+		paramOp6 = parseInt(param6);
+	        alert(paramOp6);
 		step6.style.display = "none";
 		step7.style.display = "block";
 	}
@@ -315,6 +326,9 @@ next7.onclick = function(){
 	}else{
 		param2 = form.op7.value;
 		paramOp7 = parseInt(param2);
+		param7 = form.op7.value;
+		paramOp7 = parseInt(param7);
+        alert(paramOp7);
 		step7.style.display = "none";
 		step8.style.display = "block";
 	}
@@ -345,6 +359,9 @@ next8.onclick = function(){
 	}else{
 		param2 = form.op8.value;
 		paramOp8 = parseInt(param2);
+		param8 = form.op8.value;
+		paramOp8 = parseInt(param8);
+        alert(paramOp8);
 		step8.style.display = "none";
 		step9.style.display = "block";
 	}
@@ -376,6 +393,9 @@ next9.onclick = function(){
 	}else{
 		param2 = form.op9.value;
 		paramOp9 = parseInt(param2);
+		param9 = form.op9.value;
+		paramOp9 = parseInt(param9);
+        alert(paramOp9);
 		step9.style.display = "none";
 		step10.style.display = "block";
 	}
@@ -401,6 +421,9 @@ next10.onclick = function(){
 	}else{
 		param2 = form.op10.value;
 		paramOp10 = parseInt(param2);
+		param10 = form.op10.value;
+		paramOp10 = parseInt(param10);
+		alert(paramOp10);
 		step10.style.display = "none";
 		step.style.display = "block";
 	}
