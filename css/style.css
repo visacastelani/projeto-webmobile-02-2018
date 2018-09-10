@@ -1,11 +1,43 @@
 html,body{
 	margin:0px;
 	height: 100%;
+	background-color: #3498db;
 }
 /* SESSÃO DO HEADER*/
 .header{
 	height: 50px;
-	background-color: #CECECE;	
+	background-color: #34495e;	
+}
+.nav{
+    position: relative;
+    display: inline-block;
+}
+.dropImg{
+	width:40px;
+	padding: 6px 0px 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+.dropContent{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropContent a{
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropContent a:hover{
+	background: #DEDEDE;
+}
+.nav:hover .dropContent {
+    display: block;
 }
 /* SESSÃO DO HEADER*/
 /* SESSÃO DO SECTION*/
@@ -22,13 +54,14 @@ article{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	justify-content: center;
 }
 .main{
 	height:100%;width:700px;
 	background: #DEDEDE;
 	border-radius:10px;
-	margin: 10px;
+	margin: 20px;
+	text-align: center;
+	box-shadow: 10px 10px #34495e;
 }
 .article{
 	display: none;
@@ -36,13 +69,14 @@ article{
 /* SESSÃO DO SECTION*/
 /* SESSÃO DO FOOTER*/
 .footer{
-	background-color: #CECECE;
+	background-color: #34495e;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
 	position: relative;
 	bottom:0;margin:0;
 	width: 100%;
+	color: #FFF;
 }
 .logo-footer{
 	width:60px;height:60px;
@@ -54,8 +88,10 @@ article{
 /* IMAGES */
 .img{
 	width:500px;height: 300px;
+	padding:20px 100px;
 }
 #menu-entrevista{
+	margin-top:10px;
 	width:300px;height: 300px;
 	border-radius: 10px;
 }
@@ -63,17 +99,77 @@ article{
 /* IMAGES */
 
 /* FONTES */
-h1{
+h1,h2{
 	font-family: sofia;
+	text-align: center;
 }
+
 hr {
     border-color: black;
     background-color: black;
     width: 600px;
 }
-p{
+input{
 	font-family: 'Finger Paint';
 	font-size: 80%;
 }
 
 /* FONTES */
+
+/*			FORMULARIO			*/
+
+/*			FORMULARIO			*/
+
+
+/* ETC */
+.voltar img{
+	width: 60px;
+	float: left;
+	position: absolute;
+	padding:0.1%;
+	top:5%;
+	cursor: pointer;
+}
+button{
+	margin-bottom: 10px;
+	border-radius:5px;
+	background: #EEEEEE;
+<<<<<<< HEAD
+	width: 80%;
+=======
+	width: 100px;
+>>>>>>> a30456308a3a9e7e5b33a7f6c4b9bbabcb4cfa8c
+}
+/* ETC */
+
+/*Páginas dos finais*/
+.lose{
+	display: none;
+}
+#lose1,#lose2,#lose3,#lose4,#lose5,#lose6,#lose7,#lose8,#lose9,#final1,#final2,#final3{
+	height:100%;width:700px;
+	background: #DEDEDE;
+	border-radius:10px;
+<<<<<<< HEAD
+	margin: 20px;
+	text-align: center;
+	box-shadow: 10px 10px #34495e;
+=======
+	margin: 10px;
+	text-align: center;
+>>>>>>> a30456308a3a9e7e5b33a7f6c4b9bbabcb4cfa8c
+}
+/*Páginas dos finais*/
+
+/*Responsivo*/
+@media screen and (max-width:768px){
+	body{
+		background-color: purple; /*Só pra ver se está responsivo*/
+}
+
+@media screen and (max-width:480px){
+	body{
+		background-color: pink; /*Só pra ver se está responsivo*/
+	}
+}
+/*Responsivo*/
