@@ -50,6 +50,8 @@ html,body{
 	justify-content: center;
 	min-height:84%;
 }
+
+
 article{
 	display: flex;
 	flex-flow: column;
@@ -103,14 +105,16 @@ h1,h2{
 	font-family: sofia;
 	text-align: center;
 }
-
+article h1{
+    padding-right: 5%;
+}
 hr {
     border-color: black;
     background-color: black;
     width: 600px;
 }
 input{
-	font-family: 'Finger Paint';
+	font-family: 'Arial';
 	font-size: 80%;
 }
 
@@ -125,17 +129,13 @@ input{
 .voltar img{
 	width: 60px;
 	float: left;
-	position: absolute;
-	padding:0.1%;
-	top:5%;
+	position: relative;
 	cursor: pointer;
 }
 button{
 	margin-bottom: 10px;
 	border-radius:5px;
 	background: #EEEEEE;
-	width: 80%;
-	width: 100px;
 }
 /* ETC */
 
@@ -150,8 +150,6 @@ button{
 	margin: 20px;
 	text-align: center;
 	box-shadow: 10px 10px #34495e;
-	margin: 10px;
-	text-align: center;
 }
 /*Páginas dos finais*/
 
