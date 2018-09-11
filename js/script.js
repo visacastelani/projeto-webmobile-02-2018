@@ -131,6 +131,9 @@ var restart10 = document.getElementById('restart10');
 var restart11 = document.getElementById('restart11');
 /* quando o usuário perde durante o quiz*/
 
+var restart12 = document.getElementById('restart12');
+/* quando o usuário perde durante o quiz*/
+
 /*	Alterna entre as questões	*/
 
 start.onclick = function(){
@@ -139,8 +142,11 @@ start.onclick = function(){
 };
 
 next1.onclick = function(){
+    var hora = form.op1.value;
+    alert(hora);
 	step1.style.display = "none";
 	step2.style.display = "block";
+        
 }
 voltar1.onclick = function(){
 	step.style.display = "block";
@@ -412,7 +418,7 @@ next10.onclick = function(){
 		document.form.op10[2].checked==false &&
 		document.form.op10[3].checked==false){
 		alert("Escolha um opção!");
-	}else if(document.form.op10[0].checked==true){
+	}else if(document.form.op10[3].checked==true){
 		step10.style.display = "none";
 		lose9.style.display = "block";
 		restart8.onclick = function(){
@@ -425,7 +431,7 @@ next10.onclick = function(){
 		paramOp10 = parseInt(param10);
 		alert(paramOp10);
 		step10.style.display = "none";
-		step.style.display = "block";
+		step11.style.display = "block";
 	}
 }
 voltar10.onclick = function(){
@@ -436,9 +442,39 @@ voltar10.onclick = function(){
 next11.onclick = function(){
 	pontuacao = paramOp2+paramOp3+paramOp4+paramOp5+paramOp6+paramOp7+paramOp8+paramOp9+paramOp10;
 	alert(pontuacao);
-	/*
-		COLOCAR AQUI OS FINAIS
-	*/
+	
+		/*COLOCAR AQUI OS FINAIS */
+    if(pontuacao < 5 || pontuacao == 5){
+        step11.style.display = "none";
+        var loseFinal = document.getElementById('final3');
+        loseFinal.style.display = "block";
+        restart11.onclick = function(){
+            location.reload();
+        }
+    }
+    else if
+        (pontuacao > 5 && pontuacao < 10){
+        step11.style.display = "none";
+        var loseMedia = Document.getElementById('final4');
+            loseMedia.style.display = "block";
+            restart12.onclick = function(){
+            location.reload();}
+    }
+    else if
+        (pontuacao < 13 && pontuacao > 10 || pontuacao == 10){
+            step11.style.display = "none";
+            var winMedia = document.getElementById('final2');
+            winMedia.style.display = "block";
+            restart10.onclick = function(){
+            location.reload();}
+        }else{
+            step11.style.display = "none";
+            var winAll = document.getElementById('final1');
+            winAll.style.display = "block";
+            restart9.onclick = function(){
+            location.reload();}
+        }
+	
 }
 
 	
